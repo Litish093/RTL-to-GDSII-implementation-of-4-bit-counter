@@ -1,0 +1,196 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO counter
+  CLASS BLOCK ;
+  FOREIGN counter ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 100.000 BY 100.000 ;
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.852000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 68.040 4.000 68.640 ;
+    END
+  END clk
+  PIN count[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.795200 ;
+    PORT
+      LAYER met2 ;
+        RECT 64.490 0.000 64.770 4.000 ;
+    END
+  END count[0]
+  PIN count[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.795200 ;
+    PORT
+      LAYER met2 ;
+        RECT 0.090 0.000 0.370 4.000 ;
+    END
+  END count[1]
+  PIN count[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.795200 ;
+    PORT
+      LAYER met2 ;
+        RECT 32.290 96.000 32.570 100.000 ;
+    END
+  END count[2]
+  PIN count[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.795200 ;
+    PORT
+      LAYER met2 ;
+        RECT 96.690 96.000 96.970 100.000 ;
+    END
+  END count[3]
+  PIN rst_n
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.213000 ;
+    PORT
+      LAYER met3 ;
+        RECT 96.000 30.640 100.000 31.240 ;
+    END
+  END rst_n
+  PIN vccd1
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 25.640 10.640 27.240 90.000 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 35.640 10.640 37.240 90.000 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 45.640 10.640 47.240 90.000 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 55.640 10.640 57.240 90.000 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 65.640 10.640 67.240 90.000 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 75.640 10.640 77.240 90.000 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 85.640 10.640 87.240 90.000 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 9.880 26.730 89.940 28.330 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 9.880 36.730 89.940 38.330 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 9.880 46.730 89.940 48.330 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 9.880 56.730 89.940 58.330 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 9.880 66.730 89.940 68.330 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 9.880 76.730 89.940 78.330 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 9.880 86.730 89.940 88.330 ;
+    END
+  END vccd1
+  PIN vssd1
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 28.940 10.640 30.540 90.000 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 38.940 10.640 40.540 90.000 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 48.940 10.640 50.540 90.000 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 58.940 10.640 60.540 90.000 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 68.940 10.640 70.540 90.000 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 78.940 10.640 80.540 90.000 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 9.880 30.030 89.940 31.630 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 9.880 40.030 89.940 41.630 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 9.880 50.030 89.940 51.630 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 9.880 60.030 89.940 61.630 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 9.880 70.030 89.940 71.630 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 9.880 80.030 89.940 81.630 ;
+    END
+  END vssd1
+  OBS
+      LAYER li1 ;
+        RECT 10.120 10.795 89.700 89.845 ;
+      LAYER met1 ;
+        RECT 0.070 10.640 96.990 90.000 ;
+      LAYER met2 ;
+        RECT 0.100 95.720 32.010 96.000 ;
+        RECT 32.850 95.720 96.410 96.000 ;
+        RECT 0.100 4.280 96.960 95.720 ;
+        RECT 0.650 4.000 64.210 4.280 ;
+        RECT 65.050 4.000 96.960 4.280 ;
+      LAYER met3 ;
+        RECT 4.000 69.040 96.000 89.925 ;
+        RECT 4.400 67.640 96.000 69.040 ;
+        RECT 4.000 31.640 96.000 67.640 ;
+        RECT 4.000 30.240 95.600 31.640 ;
+        RECT 4.000 10.715 96.000 30.240 ;
+  END
+END counter
+END LIBRARY
+
