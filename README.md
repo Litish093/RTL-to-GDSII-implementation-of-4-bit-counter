@@ -74,5 +74,17 @@ After running the flow, OpenLane generates multiple outputs under the `runs/` di
 - **Total Power**: Dynamic = 33 uW, Leakage ~ 0 µW  
 - **Final Area**: 188 µm²  
 - **DRC Errors**: 0 (Clean)  
-- **LVS**: Matched  
+- **LVS**: Matched
+  ## Layout Screenshots
+
+### Full Layout View
+The final GDSII layout of the 4-bit counter (all layers visible):
+
+![Full Layout](images/Counter_layout1.jpg)
+
+### Zoomed-In View
+Magnified view showing placed standard cells and routed interconnects (highlighting M1 + vias for clarity):
+
+![Zoomed Layout](images/Counter_layout2.jpg)
+
 
